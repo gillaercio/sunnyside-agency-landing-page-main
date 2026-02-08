@@ -1,0 +1,57 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@font-face {
+  font-family: "Barlow";
+  src: url('../fonts/Barlow/Barlow-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Barlow";
+  src: url('../fonts/Barlow/Barlow-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  src: url('../fonts/Faunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  src: url('../fonts/Faunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+:root {
+  --Red-400: hsl(7, 99%, 70%);
+  --Yellow-500: hsl(51, 100%, 49%);
+  --Green-800: hsl(167, 40%, 24%);
+  --Blue-800: hsl(198, 62%, 26%);
+  --Green-500: hsl(167, 34%, 41%);
+
+  --Grey-950: hsl(212, 27%, 19%);
+  --Grey-600: hsl(213, 9%, 39%);
+  --Grey-550: hsl(232, 10%, 55%);
+  --Grey-400: hsl(210, 4%, 67%);
+  --White: hsl(0, 100%, 100%);
+
+  /* Green-800 (graphic design text) */
+  /* Blue-800 (photography text) */
+  /* Green-500 (footer) */
+}
