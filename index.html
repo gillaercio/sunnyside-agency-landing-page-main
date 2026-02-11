@@ -14,24 +14,25 @@
 <body>
   <main id="content" class="site">
     <header class="header">
-      <img src="assets/images/logo.svg" alt="Sunnyside logo" class="header__logo">
+      <div class="header__top">
+        <img src="assets/images/logo.svg" alt="Sunnyside logo" class="header__logo">
+        <button class="menu-toggle" id="menu-toggle" aria-controls="site-nav" aria-expanded="false">
+          <img src="assets/images/icon-hamburger.svg" alt="Icon menu" id="menu-icon">
+        </button>
+        <nav class="header__nav" id="site-nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#">About</a></li>
+            <li class="nav__item"><a href="#">Services</a></li>
+            <li class="nav__item"><a href="#">Projects</a></li>
+            <li class="nav__item"><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
 
-      <button class="menu-toggle" id="menu-toggle" aria-controls="site-nav" aria-expanded="false">
-        <img src="assets/images/icon-hamburger.svg" alt="Icon menu" id="menu-icon">
-      </button>
-
-      <nav class="header__nav" id="site-nav">
-        <ul class="nav__list">
-          <li class="nav__item"><a href="#">About</a></li>
-          <li class="nav__item"><a href="#">Services</a></li>
-          <li class="nav__item"><a href="#">Projects</a></li>
-          <li class="nav__item"><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-
-      <h1 class="hero-title">We are creatives</h1>
-
-      <img src="assets/images/icon-arrow-down.svg" alt="Arrow down" class="arrow">
+      <div class="header__hero">
+        <h1 class="hero-title">We are creatives</h1>
+        <img src="assets/images/icon-arrow-down.svg" alt="Arrow down" class="arrow">
+      </div>
     </header>
 
     <section class="features">

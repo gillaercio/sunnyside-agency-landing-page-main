@@ -51,6 +51,10 @@ html {
   --Grey-400: hsl(210, 4%, 67%);
   --White: hsl(0, 100%, 100%);
 
+  --barlow: 'Barlow', sans-serif;
+  --fraunces: 'Fraunces', sans-serif;
+  --text-ft: bolder 2rem/200% var(--barlow);
+  --text: bolder 3rem/120% var(--fraunces);
   /* Green-800 (graphic design text) */
   /* Blue-800 (photography text) */
   /* Green-500 (footer) */
