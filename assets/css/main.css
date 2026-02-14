@@ -1,29 +1,32 @@
 body {
   min-height: 100vh;
   background-color: grey;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 #content {
   display: grid;
-  gap: 2.4rem;
+  /* gap: 2.4rem; */
   width: 100%;
   max-width: none;
-  /* max-width: 375px; */
+  max-width: 375px;
   margin: 0 auto;
   /* padding: 2.4rem; */
+  /* border: 1px solid green; */
 }
 
 .header {
   display: grid;
-  height: 600px;
-  gap: 4rem;
+  height: 500px;
+  width: 375px;
+  align-content: flex-start;
+  /* gap: 3rem; */
   /* padding: 2rem; */
   background: url('../images/mobile/image-header.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position:  bottom;
-  border: 1px solid green;
+  /* background-position:  bottom;
+  border: 1px solid green; */
 }
 
 .header__top {
@@ -31,8 +34,9 @@ body {
   justify-content: space-between;
   align-items: center;
   max-width: 375px;
-  padding: 2rem;
-  border: 1px solid red;
+  /* height: 30px; */
+  padding: 4rem 2rem;
+  /* border: 1px solid yellow; */
 }
 
 .header__nav {
@@ -48,12 +52,145 @@ body {
   display: flex;
   flex-direction: column;
   gap: 4rem;
-  align-items: center;
   justify-content: center;
+  /* align-items: first baseline; */
+  /* font: var(--text-ft); */
+  /* border: 1px solid red; */
+}
+
+.hero-title {
+  display: flex;
+  align-self: center;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 2.4rem;
+  letter-spacing: 1.4rem;
   font: var(--text-ft);
   color: var(--White);
-  border: 1px solid red;
+  /* border: 1px solid red; */
+}
+
+.arrow {
+  width: 40px;
+  align-self: center;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+  grid-template-rows: auto;
+  grid-template-areas:
+  "transformImage"
+  "transformText"
+  "standImage"
+  "standText"
+  "serviceGraphic"
+  "servicePhotography";
+}
+
+.feature--image {
+  width: 375px;
+  height: 330px;
+}
+
+.transform--image {
+  grid-area: transformImage;
+  background: url('../images/mobile/image-transform.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.transform--text {
+  grid-area: transformText;
+}
+
+.stand--image {
+  grid-area: standImage;
+  background: url('../images/mobile/image-stand-out.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.feature--text {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  gap: 3rem;
+  padding: 40px;
+  text-align: center;
+  /* vertical-align: middle; */
+  background-color: var(--White);
+}
+
+.feature--text h2 {
+  font: var(--text-title);
+  color: var(--Grey-950);
+}
+
+.feature--text p {
+  font: var(--barlow-parag);
+  color: var(--Grey-550);
+}
+
+.learn-more {
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  width: 110px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  text-align: center;
+  font: var(--text-service);
+  color: var(--Grey-950);
+  /* border-bottom: 5px solid var(--Yellow-500); */
+}
+
+.transform--text .learn-more {
+  border-bottom: 5px solid var(--Yellow-500);
+}
+
+.stand--text .learn-more {
+  border-bottom: 5px solid var(--Red-400);
+}
+
+.service--graphic,
+.service--photography {
+  height: 550px;
+}
+
+.service--text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  /* align-content: flex-end; */
+  gap: 3rem;
+  /* padding-inline: 1.8rem; */
+  padding: 4rem 1.8rem;
+  text-align: center;
+}
+
+.service--text h3 {
+  font: var(--text-subtitle);
+}
+
+.service--text p {
+  font: var(--barlow-service);
+}
+
+.service--graphic {
+  grid-area: serviceGraphic;
+  background: url('../images/mobile/image-graphic-design.jpg');
+  background-size: cover;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  color: var(--Green-800);
+}
+
+.service--photography {
+  grid-area: servicePhotography;
+  background: url('../images/mobile/image-photography.jpg');
+  background-size: cover;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  color: var(--Blue-800);
 }

@@ -10,6 +10,14 @@ html {
   font-size: 62.5%;
 }
 
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
 @font-face {
   font-family: "Barlow";
   src: url('../fonts/Barlow/Barlow-SemiBold.ttf') format('truetype');
@@ -26,15 +34,17 @@ html {
 
 @font-face {
   font-family: "Fraunces";
-  src: url('../fonts/Faunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf') format('truetype');
+  /* src: url('../fonts/Faunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf') format('truetype'); */
+  src: url('../fonts/Fraunces/static/Fraunces_72pt-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Fraunces";
-  src: url('../fonts/Faunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf') format('truetype');
-  font-weight: 900;
+  /* src: url('../fonts/Faunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf') format('truetype'); */
+  src: url('../fonts/Fraunces/static/Fraunces_72pt-Bold.ttf') format('truetype');
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -53,8 +63,16 @@ html {
 
   --barlow: 'Barlow', sans-serif;
   --fraunces: 'Fraunces', sans-serif;
-  --text-ft: bolder 2rem/200% var(--barlow);
-  --text: bolder 3rem/120% var(--fraunces);
+
+  --text-ft: bolder 3.4rem/140% var(--fraunces);
+  --text-title: bolder 3rem/120% var(--fraunces);
+  --text-subtitle: bolder 2.4rem/120% var(--fraunces);
+  --text-service: bold 1.6rem/120% var(--fraunces);
+
+  --barlow-parag: bold 1.6rem/200% var(--barlow);
+  --barlow-service: bolder 1.6rem/200% var(--barlow);
+
+  /* --text-paragraph: bolder 1.5rem/160% var(--fraunces); */
   /* Green-800 (graphic design text) */
   /* Blue-800 (photography text) */
   /* Green-500 (footer) */
