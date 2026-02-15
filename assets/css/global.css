@@ -20,6 +20,13 @@ ul {
 
 @font-face {
   font-family: "Barlow";
+  src: url('../fonts/Barlow/Barlow-ExtraBold.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Barlow";
   src: url('../fonts/Barlow/Barlow-SemiBold.ttf') format('truetype');
   font-weight: 600;
   font-style: normal;
@@ -54,6 +61,7 @@ ul {
   --Green-800: hsl(167, 40%, 24%);
   --Blue-800: hsl(198, 62%, 26%);
   --Green-500: hsl(167, 34%, 41%);
+  --Green-550: hsl(166, 31%, 61%);
 
   --Grey-950: hsl(212, 27%, 19%);
   --Grey-600: hsl(213, 9%, 39%);
@@ -64,16 +72,19 @@ ul {
   --barlow: 'Barlow', sans-serif;
   --fraunces: 'Fraunces', sans-serif;
 
-  --text-ft: bolder 3.4rem/140% var(--fraunces);
-  --text-title: bolder 3rem/120% var(--fraunces);
-  --text-subtitle: bolder 2.4rem/120% var(--fraunces);
-  --text-service: bold 1.6rem/120% var(--fraunces);
-  --testimonial-title: bolder 1.6rem/120% var(--fraunces);
-  --text-testimonial: bold 1.8rem/120% var(--fraunces);
+  --text-ft: 900 3.4rem/140% var(--fraunces);
+  --text-title: 900 3rem/120% var(--fraunces);
+  --text-subtitle: 900 2.6rem/120% var(--fraunces);
+  --text-service: 600 1.6rem/120% var(--fraunces);
+  --testimonial-title: 900 1.6rem/120% var(--fraunces);
+  --text-testimonial: 900 1.8rem/120% var(--fraunces);
   
-  --barlow-span: bold 1.3rem/120% var(--barlow);
-  --barlow-parag: bold 1.6rem/200% var(--barlow);
-  --barlow-service: bolder 1.6rem/200% var(--barlow);
+  --barlow-span: 600 1.3rem/120% var(--barlow);
+  --barlow-parag: 600 1.6rem/200% var(--barlow);
+  --barlow-service: 1.6rem/200% var(--barlow);
+
+  --footer-title: 900 3rem/120% var(--barlow);
+  --footer-parag: 600 1.8rem/120% var(--barlow);
 
   /* --text-paragraph: bolder 1.5rem/160% var(--fraunces); */
   /* Green-800 (graphic design text) */
