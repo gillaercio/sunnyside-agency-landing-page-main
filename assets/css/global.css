@@ -68,7 +68,10 @@ ul {
   --text-title: bolder 3rem/120% var(--fraunces);
   --text-subtitle: bolder 2.4rem/120% var(--fraunces);
   --text-service: bold 1.6rem/120% var(--fraunces);
-
+  --testimonial-title: bolder 1.6rem/120% var(--fraunces);
+  --text-testimonial: bold 1.8rem/120% var(--fraunces);
+  
+  --barlow-span: bold 1.3rem/120% var(--barlow);
   --barlow-parag: bold 1.6rem/200% var(--barlow);
   --barlow-service: bolder 1.6rem/200% var(--barlow);
 
