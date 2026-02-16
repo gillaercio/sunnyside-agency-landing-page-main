@@ -41,7 +41,6 @@ ul {
 
 @font-face {
   font-family: "Fraunces";
-  /* src: url('../fonts/Faunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf') format('truetype'); */
   src: url('../fonts/Fraunces/static/Fraunces_72pt-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
@@ -49,7 +48,6 @@ ul {
 
 @font-face {
   font-family: "Fraunces";
-  /* src: url('../fonts/Faunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf') format('truetype'); */
   src: url('../fonts/Fraunces/static/Fraunces_72pt-Bold.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
@@ -57,7 +55,9 @@ ul {
 
 :root {
   --Red-400: hsl(7, 99%, 70%);
+  --Red-450: hsla(7, 99%, 70%, 0.500);
   --Yellow-500: hsl(51, 100%, 49%);
+  --Yellow-550: hsl(51, 100%, 49%, 0.500);
   --Green-800: hsl(167, 40%, 24%);
   --Blue-800: hsl(198, 62%, 26%);
   --Green-500: hsl(167, 34%, 41%);
@@ -72,12 +72,14 @@ ul {
   --barlow: 'Barlow', sans-serif;
   --fraunces: 'Fraunces', sans-serif;
 
-  --text-ft: 900 3.4rem/140% var(--fraunces);
+  --text-ft: 900 4rem/140% var(--fraunces);
   --text-title: 900 3rem/120% var(--fraunces);
   --text-subtitle: 900 2.6rem/120% var(--fraunces);
   --text-service: 600 1.6rem/120% var(--fraunces);
   --testimonial-title: 900 1.6rem/120% var(--fraunces);
   --text-testimonial: 900 1.8rem/120% var(--fraunces);
+
+  --fraunces-menu: 900 1.3rem/120% var(--fraunces);
   
   --barlow-span: 600 1.3rem/120% var(--barlow);
   --barlow-parag: 600 1.6rem/200% var(--barlow);
@@ -85,9 +87,4 @@ ul {
 
   --footer-title: 900 3rem/120% var(--barlow);
   --footer-parag: 600 1.8rem/120% var(--barlow);
-
-  /* --text-paragraph: bolder 1.5rem/160% var(--fraunces); */
-  /* Green-800 (graphic design text) */
-  /* Blue-800 (photography text) */
-  /* Green-500 (footer) */
 }
