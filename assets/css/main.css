@@ -1,12 +1,12 @@
 body {
   min-height: 100vh;
-  background-color: grey;
+  /* background-color: grey; */
 }
 
 #content {
   display: grid;
   width: 100%;
-  max-width: none;
+  /* max-width: none; */
   max-width: 375px;
   margin: 0 auto;
 }
@@ -85,10 +85,6 @@ body {
   background-color: var(--Yellow-500);
   border-radius: 20px;
 }
-
-/* .header__nav .nav__item a:hover {
-
-} */
 
 .header__nav .nav__list a {
   color: var(--Grey-550);
@@ -212,22 +208,6 @@ body {
 .stand--text .learn-more:hover::after {
   background-color: var(--Red-400);
 }
-
-/* .transform--text .learn-more {
-  border-bottom: 5px solid var(--Yellow-550);
-} */
-
-/* .transform--text .learn-more:hover {
-  border-bottom: 5px solid var(--Yellow-500);
-} */
-
-/* .stand--text .learn-more {
-  border-bottom: 5px solid var(--Red-450);
-} */
-
-/* .stand--text .learn-more:hover {
-  border-bottom: 5px solid var(--Red-400);
-} */
 
 .service--graphic,
 .service--photography {
@@ -377,4 +357,117 @@ body {
 
 .social-media img:hover {
   filter: brightness(0) invert(1);
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    /* width: 1024px; */
+    border: 1px solid red;
+  }
+
+  #content {
+    display: grid;
+    width: 100%;
+    max-width: none;
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+
+  .header {
+    height: 100vh;
+    width: 1024px;
+    background: url('../images/desktop/image-header.jpg');
+    background-size: cover;
+  }
+
+  .header__top {
+    max-width: 1024px;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .features {
+    grid-template-columns: repeat(2, auto);
+    grid-template-areas:
+    "transformText transformImage"
+    "standImage standText"
+    "serviceGraphic servicePhotography";
+  }
+
+  .feature {
+    height: 480px;
+  }
+
+  .feature--image {
+    width: 512px;
+  }
+
+  .stand--text,
+  .feature--text {
+    justify-content: center;
+    text-align: left;
+    padding-left: 7.5rem;
+  }
+
+  .stand--text h2,
+  .feature--text h2 {
+    font-size: 4rem;
+  }
+
+  .learn-more {
+    margin-left: 0;
+  }
+
+  .transform--image {
+    background: url('../images/desktop/image-transform.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .stand--image {
+    background: url('../images/desktop/image-stand-out.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .service--graphic {
+    background: url('../images/desktop/image-graphic-design.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+
+  .service--photography {
+    background: url('../images/desktop/image-photography.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+
+  .testimonials {
+    padding: 8rem 3.8rem;
+  }
+
+  .testimonials-list {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+  }
+
+  .testimonial h3 {
+    padding-top: 3rem;
+  }
+
+  .gallery {
+    width: 1024px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .footer__nav .nav__list {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    padding-bottom: 2rem;
+  }
 }
