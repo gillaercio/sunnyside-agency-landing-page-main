@@ -3,9 +3,12 @@ body {
 }
 
 #content {
-  display: grid;
   width: 100%;
-  max-width: 375px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -17,6 +20,7 @@ body {
   background: url('../images/mobile/image-header.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center 70%;
   position: relative;
 }
 
@@ -114,7 +118,6 @@ body {
 .features {
   display: grid;
   grid-template-columns: repeat(1, auto);
-  grid-template-rows: auto;
   grid-template-areas:
   "transformImage"
   "transformText"
@@ -188,7 +191,7 @@ body {
   border-radius: 4px;
   opacity: 1;
   z-index: -1;
-  transition: opacity 0.3s ease;
+  transition: opacity var(--transition-default);
 }
 
 .transform--text .learn-more::after {
@@ -312,7 +315,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  align-items: space-evenly;
   gap: 4rem;
   padding: 5rem 2rem;
   text-align: center;
@@ -348,7 +350,7 @@ body {
 }
 
 .social-media img {
-  transition: filter 0.3s ease;
+  transition: filter var(--transition-default);
 }
 
 .social-media img:hover {
@@ -356,15 +358,8 @@ body {
 }
 
 @media screen and (min-width: 1024px) {
-  #content {
-    display: grid;
-    max-width: 1024px;
-    margin: 0 auto;
-  }
-
   .header {
     height: 100vh;
-    width: 100%;
     background: url('../images/desktop/image-header.jpg');
     background-size: cover;
     background-position: center;
@@ -404,7 +399,7 @@ body {
 
   .header__nav .nav__item a {
     color: var(--White);
-    transition: all 0.3s ease;
+    transition: background-color var(--transition-default), color var(--transition-default);
   }
 
   .header__nav .nav__item a:hover {
@@ -420,7 +415,7 @@ body {
     color: var(--Grey-950);
     background-color: var(--White);
     border-radius: 30px;
-    transition: all 0.3s ease;
+    transition: var(--transition-default);
   }
 
   .arrow {
